@@ -34,6 +34,5 @@ We will apply everything we learned through coding small applications to solidif
 
 This course opens up many opportunities to work in a growing market, where your skills will be highly values by employers. There is a huge shortage of Rust skills, and you can claim the top spot.
 
-Catalin Stefan
-Software Development Teacher
+Catalin Stefan, Software Development Teacher
 
