@@ -1,6 +1,4 @@
 /target
-/.idea
-.gitignore
 
 # User-specific stuff
 .idea/**/workspace.xml
