@@ -1,3 +1,7 @@
+#[allow(unused_variables)]
+#[allow(unused_assignments)]
+#[allow(unused_mut)]
+#[allow(dead_code)]
 /*
 Udemy Course.
 
@@ -42,6 +46,23 @@ mod archive;
 //mod player;
 
 fn main() {
+    //вывод модуля 2
+    //modul2::user_input(); //вывод ввода с клавиатуры
+    //modul2::print_var(); //вывод разного вида переменных
+
+    //вывод модуля 3
+    modul3::mod3_var();
+    modul3::mod3_string();
+    modul3::mod3_const();
+    modul3::mod3_oper();
+    //использование функций
+    let mut name = "John";
+    let greeting = modul3::say_hello(&mut name);
+    println!("{}", greeting);
+
+    //вывод модуля 4
+
+
     //player::play_movie("snatch.mp4");
     //player::play_audio("rhcp.mp3");
     arc("file111.txt");
