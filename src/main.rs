@@ -23,16 +23,18 @@ Catalin Stefan
  */
 
 //Подключаемые библиотеки
-//use crate::archive::arch::arch_file;
-use crate::archive::arch::arch_file as arc;
+//----------------------------------Crates
+//use crate::archive::arch::arch_file;  //mod4 Crates
+//use crate::archive::arch::arch_file as arc; //mod4 Crates
+//use rand::Rng; //mod4 Crates
+//----------------------------------numbers generator
 //use rand::Rng;
-use rand::{thread_rng, Rng};
-use rand::distributions::Alphanumeric;
+//use rand::{thread_rng, Rng};
+//use rand::distributions::Alphanumeric;
 
 //Модули занятий подключаются как доп. файлы. Список модулей указан выше.
-mod modul2;
-mod modul3;
-mod modul4;
+//mod modul2;
+//mod modul3;
 mod modul5;
 mod modul6;
 mod modul7;
@@ -41,8 +43,10 @@ mod modul9;
 mod modul10;
 mod modul11;
 
+//mod player; //к модулю 4 о модулях
+
 //Модули, которые относятся к самим занятиям и являются чисто учебными
-mod archive;
+//mod archive;
 //mod player;
 
 fn main() {
@@ -51,33 +55,80 @@ fn main() {
     //modul2::print_var(); //вывод разного вида переменных
 
     //вывод модуля 3
-    modul3::mod3_var();
-    modul3::mod3_string();
-    modul3::mod3_const();
-    modul3::mod3_oper();
+    //modul3::mod3_var();
+    //modul3::mod3_string();
+    //modul3::mod3_const();
+    //modul3::mod3_oper();
     //использование функций
-    let mut name = "John";
+    /*let mut name = "John";
     let greeting = modul3::say_hello(&mut name);
     println!("{}", greeting);
+    */
 
     //вывод модуля 4
-
-
+    //----------------------------------Modules
     //player::play_movie("snatch.mp4");
     //player::play_audio("rhcp.mp3");
-    arc("file111.txt");
-    //numbers generator
+    //clean::perform_clean();
+    //clean::files::clean_files();
+    //----------------------------------Crates
+    //arch_file("somefile.txt");
+    //arc("somefile.txt");
     //let mut rng = rand::thread_rng();
     //let a: i32 = rng.gen();
-    //let b: i32 = rng.gen_range(0, 100);
+    //println!("{}", a);
+
+    //----------------------------------numbers generator
+    //let mut rng = rand::thread_rng();
+    //rng.gen();
+    //let a: i32 = rng.gen(); //Generate an integer
+    //let b: i32 = rng.gen_range(0, 100); //Bounded generation
     //println!("{}", a);
     //println!("{}", b);
-    //String generator
-    for i in 1..6 {
-        let rand_string: String = thread_rng()
-            .sample_iter(&Alphanumeric)
-            .take(30)
-            .collect();
-        println!("{}", rand_string)
+    //----------------------------------String generator
+    //for i in 1..6 {
+    //    let rand_string: String = thread_rng()
+    //        .sample_iter(&Alphanumeric)
+    //        .take(30)
+    //        .collect();
+    //    println!("{}", rand_string)
+    //}
+    //вывод модуля 4 Массивы
+    //-------------Arrays
+    //modul5::mod5_arrays();
+    //-------------Vectors
+    //modul5::mod5_vectors();
+    //-------------Slices
+    //let numbers = [1, 2, 3, 4, 5];
+    //let slice = &numbers[1..4];
+    //println!("{:?}", slice);
+    //let mut colors = ["red", "green", "blue", "pink"];
+    //println!("{:?}", colors);
+    //modul5::mod5_slices(&mut colors[2..4]);
+    //println!("{:?}", colors);
+    //-------------Tuples
+    //modul5::mod5_tuples();
+    //-------------Structures
+    //modul5::mod5_structures();
+    //-------------Enums
+    //modul5::mod5_enums();
+    //-------------Generics
+    modul5::mod5_generics();
+}
+
+//Модуль 4
+//можно объединять функции в модули при помощи mod
+/*
+mod clean {
+
+    pub fn perform_clean() {
+        println!("Cleaning hdd");
+    }
+
+    pub mod files {
+        pub fn clean_files() {
+            println!("Removing unused files");
+        }
     }
 }
+ */

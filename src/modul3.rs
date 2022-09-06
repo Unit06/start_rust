@@ -2,6 +2,7 @@
 #[allow(unused_assignments)]
 #[allow(unused_mut)]
 #[allow(dead_code)]
+
 // переменные
 pub fn mod3_var() {
 let name = "Michael"; //
@@ -117,5 +118,31 @@ println!("{}", a >= b && b <= c);
 //функции
 pub fn say_hello(name: &mut &str) -> String {
     let greeting = format!("Hello {}", name);
-    greeting
+    greeting //то же самое что и return
 }
+
+/*
+Так же нужно проверять ссылочность переменных при их использовании. Например:
+fn main() {
+   let mut name = "John";
+   say_hello(&mut name);
+   println!("{}", name);
+}
+
+fn say_hello(name: &mut &str) {
+   *name = “Alex”;
+   println!("Hello {}", name);
+}
+
+в отличии от прямого назначения:
+fn main() {
+   let mut name = "John";
+   say_hello(name);
+   println!("{}", name);
+}
+
+fn say_hello(name: &str) {
+   println!("Hello {}", name);
+}
+
+ */
