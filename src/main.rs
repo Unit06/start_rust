@@ -35,7 +35,7 @@ Catalin Stefan
 //Модули занятий подключаются как доп. файлы. Список модулей указан выше.
 //mod modul2;
 //mod modul3;
-mod modul5;
+//mod modul5;
 mod modul6;
 mod modul7;
 mod modul8;
@@ -50,11 +50,11 @@ mod modul11;
 //mod player;
 
 fn main() {
-    //вывод модуля 2
+    //----------------------------------вывод модуля 2
     //modul2::user_input(); //вывод ввода с клавиатуры
     //modul2::print_var(); //вывод разного вида переменных
 
-    //вывод модуля 3
+    //----------------------------------вывод модуля 3
     //modul3::mod3_var();
     //modul3::mod3_string();
     //modul3::mod3_const();
@@ -65,7 +65,7 @@ fn main() {
     println!("{}", greeting);
     */
 
-    //вывод модуля 4
+    //----------------------------------вывод модуля 4
     //----------------------------------Modules
     //player::play_movie("snatch.mp4");
     //player::play_audio("rhcp.mp3");
@@ -93,7 +93,7 @@ fn main() {
     //        .collect();
     //    println!("{}", rand_string)
     //}
-    //вывод модуля 4 Массивы
+    //----------------------------------вывод модуля 5 Массивы
     //-------------Arrays
     //modul5::mod5_arrays();
     //-------------Vectors
@@ -113,7 +113,14 @@ fn main() {
     //-------------Enums
     //modul5::mod5_enums();
     //-------------Generics
-    modul5::mod5_generics();
+    //modul5::mod5_generics();
+    //----------------------------------вывод модуля 6
+    //modul6::if_statement();
+    modul6::match_statement();
+    modul6::pattern_matching();
+    modul6::loop1();
+    modul6::loop2();
+    //----------------------------------вывод модуля 7
 }
 
 //Модуль 4
