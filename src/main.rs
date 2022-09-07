@@ -36,7 +36,7 @@ Catalin Stefan
 //mod modul2;
 //mod modul3;
 //mod modul5;
-mod modul6;
+//mod modul6;
 mod modul7;
 mod modul8;
 mod modul9;
@@ -116,10 +116,10 @@ fn main() {
     //modul5::mod5_generics();
     //----------------------------------вывод модуля 6
     //modul6::if_statement();
-    modul6::match_statement();
-    modul6::pattern_matching();
-    modul6::loop1();
-    modul6::loop2();
+    //modul6::match_statement();
+    //modul6::pattern_matching();
+    //modul6::loop1();
+    //modul6::loop2();
     //----------------------------------вывод модуля 7
 }
 
