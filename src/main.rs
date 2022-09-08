@@ -121,6 +121,17 @@ fn main() {
     //modul6::loop1();
     //modul6::loop2();
     //----------------------------------вывод модуля 7
+    //----------------------------------Functions and scope
+    modul7::fun_scop();
+    modul7::mod7_clousers();
+    modul7::mod7_hofs();
+    modul7::mod7_macros();
+    //----------------------------------Closures
+
+    //----------------------------------Higher Order Functions
+
+    //----------------------------------Macros
+
 }
 
 //Модуль 4
