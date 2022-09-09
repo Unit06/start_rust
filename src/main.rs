@@ -37,7 +37,7 @@ Catalin Stefan
 //mod modul3;
 //mod modul5;
 //mod modul6;
-mod modul7;
+//mod modul7;
 mod modul8;
 mod modul9;
 mod modul10;
@@ -121,16 +121,20 @@ fn main() {
     //modul6::loop1();
     //modul6::loop2();
     //----------------------------------вывод модуля 7
-    //----------------------------------Functions and scope
-    modul7::fun_scop();
-    modul7::mod7_clousers();
-    modul7::mod7_hofs();
-    modul7::mod7_macros();
-    //----------------------------------Closures
+    //modul7::fun_scop();
+    //modul7::mod7_clousers();
+    //modul7::mod7_hofs();
+    //modul7::mod7_macros();
+    //----------------------------------вывод модуля 8
+    //modul8::mod8_trait1();
+    //modul8::mod8_trait2();
+    //modul8::mod8_trait3();
+    //modul8::mod8_trait4();
+    //modul8::mod8_trait5();
+    //modul8::mod8_stat_dis();
+    //modul8::mod8_stat_dyn();
+    //----------------------------------вывод модуля 9
 
-    //----------------------------------Higher Order Functions
-
-    //----------------------------------Macros
 
 }
 
