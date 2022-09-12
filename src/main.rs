@@ -134,6 +134,11 @@ fn main() {
     //modul8::mod8_stat_dis();
     //modul8::mod8_stat_dyn();
     //----------------------------------вывод модуля 9
+    modul9::mod9_ownership();
+    modul9::mod9_borrowing();
+    modul9::mod9_lifetime();
+    modul9::mod9_rc_var();
+    //----------------------------------вывод модуля 10
 
 
 }
