@@ -38,8 +38,8 @@ Catalin Stefan
 //mod modul5;
 //mod modul6;
 //mod modul7;
-mod modul8;
-mod modul9;
+//mod modul8;
+//mod modul9;
 mod modul10;
 mod modul11;
 
@@ -134,13 +134,19 @@ fn main() {
     //modul8::mod8_stat_dis();
     //modul8::mod8_stat_dyn();
     //----------------------------------вывод модуля 9
-    modul9::mod9_ownership();
-    modul9::mod9_borrowing();
-    modul9::mod9_lifetime();
-    modul9::mod9_rc_var();
+    //modul9::mod9_ownership();
+    //modul9::mod9_borrowing();
+    //modul9::mod9_lifetime();
+    //modul9::mod9_rc_var();
     //----------------------------------вывод модуля 10
-
-
+    //modul10::file_hand();
+    //modul10::mod10_errors();
+    //modul10::help_meth();
+    //modul10::q_oper();
+    //----------------------------------вывод модуля 11
+    //modul11::mod11_threads();
+    //modul11::mod11_chan();
+    //modul11::mod11_mutex();
 }
 
 //Модуль 4
