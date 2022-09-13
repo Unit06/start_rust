@@ -40,8 +40,8 @@ Catalin Stefan
 //mod modul7;
 //mod modul8;
 //mod modul9;
-mod modul10;
-mod modul11;
+//mod modul10;
+//mod modul11;
 
 //mod player; //к модулю 4 о модулях
 
